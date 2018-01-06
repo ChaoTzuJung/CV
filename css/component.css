@@ -102,6 +102,19 @@
 .btn.btn--primary:active {
   background-color: #dd6488;
 }
+
+.btn.btn--secondary {
+  background-color: inherit;
+  border: 1px solid #e881a7;
+  color: #e881a7;
+
+}
+.btn.btn--secondary:hover,
+.btn.btn--secondary:active {
+  background-color: #e881a7;
+  color: #fefefe
+}
+
 .btn.btn--lg {
   font-size: 20px;
   line-height: 56px;
@@ -128,18 +141,101 @@
   padding:0 32px;
 }
 
-/* $icon btn */
+.btn-group .btn {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.btn-group--center {
+  text-align: center;
+}
+
+/* icon btn */
 .icon-btn {
   display: inline-block;
   width: 32px;
   height: 32px;
   line-height: 32px;
   font-size: 24px;
+  font-family: serif;
 }
 .icon-btn .icon{
   display: block;
   text-align: center;
 }
+
+/* text btn */
+.text-btn {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Raleway", 'Helvetica', 'roboto', arial, sans-serif;
+  text-decoration: none;
+  letter-spacing: 0;
+  color: #484848
+}
+
+.text-btn.text-btn--primary {
+  color: #e881a7;
+}
+
+.text-btn.text-btn--lg {
+  font-size: 20px;
+  line-height: 48px;
+  height: 48px;
+  font-weight: 900;
+}
+
+.text-btn.text-btn--lg:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #e881a7;
+  transition: all 0.3s;
+}
+
+.text-btn.text-btn--lg:hover:before {
+  width: 100%;
+}
+
+/* imgage */
+.image {
+  width: 100%;
+}
+/* imgbox */
+.imgbox {
+  width: 100%;
+  overflow: hidden;
+  /* border: 1px solid #000; */
+}
+
+.imgbox__inner {
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+}
+
+.imgbox__inner.imgbox__inner--4-3 {
+  padding-top: calc(100% * 3 / 4);
+}
+
+.imgbox__inner .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
 /*---------------------------*/
 
 /* $Header
@@ -484,7 +580,7 @@
 
 /* $timeline */
 .timeline-group {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   max-width: 960px;
   /* height: 800px; */
   margin-right: auto;
@@ -569,5 +665,126 @@
     transform: translate(-50%, -50%);
     left: -24px;
   }
+}
+/*---------------------------*/
+
+/* $Work 
+---------------------*/
+.work {
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+
+@media(max-width: 768px) {
+  .work {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+/* work-list */
+
+.work-list {
+  padding-top: 80px;
+}
+
+.work-item {
+  margin-bottom: 160px;
+}
+
+.work-item__text {
+  padding-top: 24px;
+}
+
+.work-item__text--right {
+  text-align: right;
+}
+
+.work-item__title {
+  font-size: 40px;
+  font-family: "Raleway", 'Helvetica', 'roboto', arial, sans-serif;
+  color: #484848;
+}
+
+.work-item__title--right {
+  margin-right: -80px;
+}
+
+.work-item__title--left {
+  margin-left: -80px;
+}
+
+.work-item__intro {
+  font-size: 16px;
+  line-height: 32px;
+}
+
+@media(max-width: 768px) {
+  .work-item {
+    margin-bottom: 48px;
+  }
+  .work-item__text--right {
+    text-align: left;
+  }
+  .work-item__title {
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  .work-item__title--right {
+    margin-right: 0px;
+  }
+  
+  .work-item__title--left {
+    margin-left: 0px;
+  }
+}
+/*---------------------------*/
+
+
+/* $Work 
+---------------------*/
+.contact {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* form */
+
+.form {
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.form input[type="text"],
+.form input[type="tel"],
+.form input[type="email"],
+.form textarea{
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+  display: inline-block; 
+  vertical-align: middle; 
+  padding: 8px 16px;
+  margin-bottom: 16px;
+  background-color: inherit;
+  color: #fefefe;
+}
+
+.form input[type="text"]:focus,
+.form input[type="tel"]:focus,
+.form input[type="email"]:focus,
+.form textarea:focus{
+    outline: 0;
+    border: 1px solid #e881a7;
+}
+
+.form label{
+  margin-bottom: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #fefefe;
 }
 /*---------------------------*/
