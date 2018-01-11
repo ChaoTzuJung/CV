@@ -67,10 +67,11 @@ router.post('/post', csrfProtection, function(req, res) {
     var transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
-            user: process.env.GMAIL_ACCOUNT,
-            pass: process.env.GMAIL_PW
+            user: 'alanchao2305@gmail.com',
+            pass: 'xixsahiykqygcywp'
         }
     });
+    console.log(transporter);
     transporter.sendMail(mailToAnyoneOptions, function(error,info){
         if (error) {
             return console.log(error);
