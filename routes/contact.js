@@ -43,8 +43,8 @@ router.post('/post', csrfProtection, function(req, res) {
         return res.redirect('/');
     }
     var mailOptions = {
-        from: req.body.email, 
-        to: 's110319022@gmail.com', 
+        from: ''+ req.body.username +' <'+ req.body.username +' >', 
+        to: 'alanchao2305@gmail.com',
         subject: '聯絡我們：' + req.body.username+'寄了一封信給你',
         text: req.body.description, 
     };
