@@ -42,16 +42,28 @@ router.post('/post', csrfProtection, function(req, res) {
         req.flash('errors',messages);
         return res.redirect('/');
     }
-    var mailOptions = {
+    var mailToAnyoneOptions = {
+        //填寫表單的人Email
+        // sender: ' '+req.body.username+' ', 
+        from:  '"趙子榮" <alanchao2305@gmail.com>',
+        //我的Email
+        to: ' '+ req.body.email +' ',
+        subject: '聯絡我們： 趙子榮寄了一封信給你',
+        //填寫表單的人想告訴我的話
+        text: '您好！我們團隊已收到您的通知，兩天內會回覆您', 
+    };
+
+    var mailToMeOptions = {
         //填寫表單的人Email
         sender: ' '+req.body.username+' ', 
-        from:  ' '+req.body.username+'<'+req.body.email+'> ',
+        from: ' '+req.body.username+' ',
         //我的Email
-        to: req.body.email,
+        to: 'alanchao2305@gmail.com',
         subject: '聯絡我們：' + req.body.username+'寄了一封信給你',
         //填寫表單的人想告訴我的話
         text: req.body.description, 
     };
+
     var transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
@@ -59,7 +71,13 @@ router.post('/post', csrfProtection, function(req, res) {
             pass: process.env.GMAIL_PW
         }
     });
-    transporter.sendMail(mailOptions,function(error,info){
+    transporter.sendMail(mailToAnyoneOptions, function(error,info){
+        if (error) {
+            return console.log(error);
+        }
+        res.redirect(`/review/`);
+    })
+    transporter.sendMail(mailToMeOptions, function(error,info){
         if (error) {
             return console.log(error);
         }
