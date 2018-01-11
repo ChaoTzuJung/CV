@@ -47,7 +47,7 @@ router.post('/post', csrfProtection, function(req, res) {
         sender: ' '+req.body.username+' ', 
         from:  ' '+req.body.username+'<'+req.body.email+'> ',
         //我的Email
-        to: 's110319022@gmail.com',
+        to: req.body.email,
         subject: '聯絡我們：' + req.body.username+'寄了一封信給你',
         //填寫表單的人想告訴我的話
         text: req.body.description, 
