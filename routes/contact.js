@@ -43,17 +43,20 @@ router.post('/post', csrfProtection, function(req, res) {
         return res.redirect('/');
     }
     var mailOptions = {
-        from: ''+ req.body.username +' <'+ req.body.username +' >', 
-        to: 'alanchao2305@gmail.com',
+        //填寫表單的人Email
+        sender: ' '+req.body.username+' ', 
+        from:  ' '+req.body.username+'<'+req.body.email+'> ',
+        //我的Email
+        to: 's110319022@gmail.com',
         subject: '聯絡我們：' + req.body.username+'寄了一封信給你',
+        //填寫表單的人想告訴我的話
         text: req.body.description, 
     };
-    console.log(req.body.email)
     var transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
-            user: process.env.gmailUser,
-            pass: process.env.gmailPass,
+            user: process.env.GMAIL_ACCOUNT,
+            pass: process.env.GMAIL_PW
         }
     });
     transporter.sendMail(mailOptions,function(error,info){
