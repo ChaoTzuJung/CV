@@ -80,7 +80,7 @@
 
 .lean-bg--top:before {
   top: 0px;
-  transform: skewY(-5deg) translateY(-50%);
+  transform: skewY(-4deg) translateY(-50%);
 }
 
 .lean-bg--top {
@@ -94,8 +94,10 @@
 }
 
 .lean-bg--bottom:after {
-  bottom: 0;
-  transform: skewY(-5deg) translateY(50%);
+  /* 0 -> -25 debug for block skill card */
+  /* -5deg -> -4deg debug for block skill card */
+  bottom: -25px;
+  transform: skewY(-4deg) translateY(50%);
 }
 
 .lean-bg--bottom {
@@ -606,6 +608,7 @@
 
 .skill-card__text {
   margin-left: 0;
+  color: #484848;
 }
 
 .skill-card__icon {

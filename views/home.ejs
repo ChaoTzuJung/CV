@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/layout.css">
 	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css">｀
 	<link rel="stylesheet" href="css/component.css">
 </head>
 <body>
@@ -28,35 +28,12 @@
             </a>
             <a href="" class="icon-btn">
               <i class="icon icon-dribbble"></i>
-            </a>
+            </a>  
             <a href="" class="icon-btn">
               <i class="icon icon-behance"></i>
             </a>
           </div>
-          <div class="nav navbar＿nav">
-            <a href="#popup-overlay" class="menu-toggle">
-              <span></span>
-              <span></span>
-              <span></span>
-            </a>
-              <div id="popup-overlay" class="popup-menu">
-                <div class="container">
-                  <div class="u-clearfix">
-                    <a href="" class="popup-menu__close">
-                      <span></span>
-                      <span></span>                
-                    </a>
-                  </div>
-                  <ul>
-                    <li><a href="#about" class="popup-menu__item">ABOUT</a></li>
-                    <li><a href="#skill" class="popup-menu__item">SKILL</a></li>
-                    <li><a href="#experience" class="popup-menu__item">EXPERINCE</a></li>
-                    <li><a href="#work" class="popup-menu__item">MY WORK</a></li>
-                    <li><a href="#contact" class="popup-menu__item">CONTENT</a></li>
-                  </ul>
-                </div>
-              </div>
-          </div>
+          <% include hamburger %>
         </div>
       </div>
     </header>
@@ -90,10 +67,10 @@
                   <i class="icon-quote-right"></i>
                 </div>
                 <p class="quote__text">
-                    我是趙子榮，國立臺北教育大學數位科技設計系畢業，致力於前端開發並將Motion Graphic加入網頁以創造新型態的互動式視覺體驗。目前前後端整合與前端三大框架一直是我在持續專研的項目。
+                  Hi, I'm Alan Chao, graduated from National Taipei University of Education with Department of Digital Technology Design. I'm a first-year graduate student in Master Program in Toy and Game Design in National Taipei University of Education and devote to Front-end development with Motion Graphic. 
                 </p>
                 <div class="quote__name">
-                  <span>Alan Chao - </span>from NTUE
+                  <span>Alan Chao - </span>from NTUE_DTD
                 </div>
               </div>
             </div>
@@ -105,77 +82,7 @@
       <div id="skill" class="skill bg-color-white lean-bg--bottom">
         <img class="graphic_005" data-stellar-ratio="1.5" src="image/parallax_graphic/cir-pink-md.svg" alt="">
         <img class="graphic_006" data-stellar-ratio="1.5" src="image/parallax_graphic/dot-grey.svg" alt="">
-        <div class="container">
-          <h2 class="subtitle u-text-center wow bounceInUp">SKILL</h2>
-          <div class="skill-group">
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="skill-card  wow bounceInUp">
-                  <div class="skill-card__inner">
-                    <h4 class="skill-card__title">
-                      HTML
-                      <p class="skill-card__text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quibusdam fuga in, rem numquam est, perferendis dolorum quos iusto eaque culpa quas. Excepturi assumenda repellendus asperiores ullam aliquam eaque aperiam!
-                      </p>
-                    </h4>
-                  </div>
-                  <div class="skill-card__icon">
-                    <img class="image" src="image/skill_icon/html-icon.png" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="skill-card  wow bounceInUp" data-wow-delay="0.4s">
-                  <div class="skill-card__inner">
-                    <h4 class="skill-card__title">
-                      CSS
-                      <p class="skill-card__text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quibusdam fuga in, rem numquam est, perferendis dolorum quos iusto eaque culpa quas. Excepturi assumenda repellendus asperiores ullam aliquam eaque aperiam!
-                      </p>
-                    </h4>
-                  </div>
-                  <div class="skill-card__icon">
-                    <img class="image" src="image/skill_icon/css-icon.png" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6">
-                  <div class="skill-card wow bounceInUp" data-wow-delay="0.8s">
-                    <div class="skill-card__inner">
-                      <h4 class="skill-card__title">
-                        SKETCH
-                        <p class="skill-card__text">
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quibusdam fuga in, rem numquam est, perferendis dolorum quos iusto eaque culpa quas. Excepturi assumenda repellendus asperiores ullam aliquam eaque aperiam!
-                        </p>
-                      </h4>
-                    </div>
-                    <div class="skill-card__icon">
-                      <img class="image" src="image/skill_icon/sketch-icon.png" alt="">
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="skill-card  wow bounceInUp" data-wow-delay="1.1s">
-                      <div class="skill-card__inner">
-                        <h4 class="skill-card__title">
-                          AI
-                          <p class="skill-card__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum quibusdam fuga in, rem numquam est, perferendis dolorum quos iusto eaque culpa quas. Excepturi assumenda repellendus asperiores ullam aliquam eaque aperiam!
-                          </p>
-                        </h4>
-                      </div>
-                      <div class="skill-card__icon">
-                        <img class="image" src="image/skill_icon/ai-icon.png" alt="">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <% include skill %>
       </div> 
       <!-- End skill -->
       <!-- Start experience -->
@@ -187,44 +94,7 @@
         <div class="container">
           <h2 class="subtitle u-text-center color-white  wow bounceInUp">EXPERIENCE</h2>
           <div class="timeline-group">
-            <div class="timeline"></div>
-            <div class="timeline-cards wow bounceInUp">
-              <div class="timeline-cards__row">
-                <div class="timeline-card">
-                  <p class="timeline-card__text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quas animi delectus! Maxime doloremque aperiam id eveniet animi consectetur molestias maiores, at quas perspiciatis quod. Iure consequuntur quos sapiente assumenda.
-                  </p>
-                </div>
-              </div>
-              <div class="timeline-cards__row">
-                <div class="timeline-card wow bounceInUp">
-                  <p class="timeline-card__text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quas animi delectus! Maxime doloremque aperiam id eveniet animi consectetur molestias maiores, at quas perspiciatis quod. Iure consequuntur quos sapiente assumenda.
-                  </p>
-                </div>
-              </div>
-              <div class="timeline-cards__row">
-                <div class="timeline-card wow bounceInUp">
-                  <p class="timeline-card__text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quas animi delectus! Maxime doloremque aperiam id eveniet animi consectetur molestias maiores, at quas perspiciatis quod. Iure consequuntur quos sapiente assumenda.
-                  </p>
-                </div>
-              </div>
-              <div class="timeline-cards__row">
-                <div class="timeline-card wow bounceInUp">
-                  <p class="timeline-card__text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quas animi delectus! Maxime doloremque aperiam id eveniet animi consectetur molestias maiores, at quas perspiciatis quod. Iure consequuntur quos sapiente assumenda.
-                  </p>
-                </div>
-              </div>
-              <div class="timeline-cards__row">
-                <div class="timeline-card wow bounceInUp">
-                  <p class="timeline-card__text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quas animi delectus! Maxime doloremque aperiam id eveniet animi consectetur molestias maiores, at quas perspiciatis quod. Iure consequuntur quos sapiente assumenda.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <% include experience %>
           </div>
         </div>
       </div>
@@ -243,106 +113,7 @@
         <div class="container">
           <h2 class="subtitle u-text-center wow bounceInUp">MY WORKS</h2>
           <div class="work-list">
-            <div class="work-item wow fadeInUp">
-              <div class="row">
-                <div class="col-sm-6 col-sm-push-5">
-                  <div class="imgbox">
-                    <a href="image/works/work001.jpg" class="" data-fancybox="group">
-                      <div class="imgbox__inner imgbox__inner--4-3">
-                        <div class="image" style="background-image: url('image/works/thumbnail/work001_thumb.jpg');"></div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-sm-4 col-sm-pull-5">
-                  <div class="work-item__text work-item__text--right">
-                    <h3 class="work-item__title work-item__title--right">Work title for good design stuff</h3>
-                    <p class="work-item__intro">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam perspiciatis facilis vitae totam expedita distinctio possimus facere non quasi accusantium enim explicabo, deleniti nulla quos deserunt voluptas consectetur inventore optio?</p>
-                    <a href="" class="text-btn text-btn--primary text-btn--lg">Show project</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="work-item wow fadeInUp">
-              <div class="row">
-                <div class="col-sm-6 col-sm-push-1">
-                  <div class="imgbox">
-                    <a href="image/works/work002.jpg" class="" data-fancybox="group">
-                      <div class="imgbox__inner imgbox__inner--4-3">
-                        <div class="image" style="background-image: url('image/works/thumbnail/work002_thumb.jpg');"></div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-sm-4 col-sm-push-1">
-                  <div class="work-item__text">
-                    <h3 class="work-item__title work-item__title--left">Work title for good design stuff</h3>
-                    <p class="work-item__intro">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam perspiciatis facilis vitae totam expedita distinctio possimus facere non quasi accusantium enim explicabo, deleniti nulla quos deserunt voluptas consectetur inventore optio?</p>
-                    <a href="" class="text-btn text-btn--primary text-btn--lg">Show project</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="work-item wow fadeInUp">
-              <div class="row">
-                <div class="col-sm-6 col-sm-push-6">
-                  <div class="imgbox">
-                    <a href="image/works/work003.jpg" class="" data-fancybox="group">
-                      <div class="imgbox__inner imgbox__inner--4-3">
-                        <div class="image" style="background-image: url('image/works/thumbnail/work003_thumb.jpg');"></div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-sm-4 col-sm-pull-5">
-                  <div class="work-item__text">
-                    <h3 class="work-item__title work-item__title--right">Work title for good design stuff</h3>
-                    <p class="work-item__intro">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam perspiciatis facilis vitae totam expedita distinctio possimus facere non quasi accusantium enim explicabo, deleniti nulla quos deserunt voluptas consectetur inventore optio?</p>
-                    <a href="" class="text-btn text-btn--primary text-btn--lg">Show project</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="work-item wow fadeInUp">
-              <div class="row">
-                <div class="col-sm-6 col-sm-push-1">
-                  <div class="imgbox">
-                    <a href="image/works/work004.jpg" class="" data-fancybox="group">
-                      <div class="imgbox__inner imgbox__inner--4-3">
-                        <div class="image" style="background-image: url('image/works/thumbnail/work004_thumb.jpg');"></div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-sm-4 col-sm-push-1">
-                  <div class="work-item__text">
-                    <h3 class="work-item__title">Work title for good design stuff</h3>
-                    <p class="work-item__intro">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam perspiciatis facilis vitae totam expedita distinctio possimus facere non quasi accusantium enim explicabo, deleniti nulla quos deserunt voluptas consectetur inventore optio?</p>
-                    <a href="" class="text-btn text-btn--primary text-btn--lg">Show project</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="work-item wow fadeInUp">
-              <div class="row">
-                <div class="col-sm-6 col-sm-push-5">
-                  <div class="imgbox">
-                    <a href="image/works/work005.jpg" class="" data-fancybox="group">
-                      <div class="imgbox__inner imgbox__inner--4-3">
-                        <div class="image" style="background-image: url('image/works/thumbnail/work005_thumb.jpg');"></div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-sm-4 col-sm-pull-5">
-                  <div class="work-item__text work-item__text--right">
-                    <h3 class="work-item__title work-item__title--right">Work title for good design stuff</h3>
-                    <p class="work-item__intro">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam perspiciatis facilis vitae totam expedita distinctio possimus facere non quasi accusantium enim explicabo, deleniti nulla quos deserunt voluptas consectetur inventore optio?</p>
-                    <a href="" class="text-btn text-btn--primary text-btn--lg">Show project</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <% include mywork%>
           </div>
           <div class="btn-group btn-group--center ">
             <a href="" class="btn btn--secondary btn--md wow bounceIn">More works</a>
@@ -359,28 +130,7 @@
       <img class="graphic_024" data-stellar-ratio="1.5" src="image/parallax_graphic/cir-purple-md.svg" alt="">
       <div class="container">
         <h2 class="subtitle u-text-center color-white  wow bounceInUp">CONTACT</h2>
-        <form action="/post" class="form wow fadeInUp" method="post">
-          <input type="hidden" name="_csrf" value="<%= csrfToken %>">
-          <label for="username">Name</label>
-          <input type="text" name="username" id="username">
-          <div class="row">
-            <div class="col-sm-6">
-              <label for="tel">Phone</label>
-              <input type="tel" name="tel" id="tel">
-            </div>
-            <div class="col-sm-6">
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email">
-            </div>
-          </div>
-          <label for="description">Meassge</label>
-          <textarea name="description" id="description" cols="30" rows="10"></textarea>
-          <!-- <%= date %> -->
-          <%= errors %>
-          <div class="btn-group btn-group--center form__btn-group">
-            <input type="submit" class="btn btn--primary btn--md" value="Send">
-          </div>
-        </form>
+        <% include contact %>
         <div class="divide-text wow fadeInUp">or</div>
         <div class="info">
           <div class="info_email wow bounceInUp">
@@ -410,7 +160,7 @@
     <footer class="footer">
       <div class="container">
         <p class="final-text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic fuga distinctio eum esse quam laborum asperiores saepe incidunt placeat voluptatem corporis veritatis omnis ad labore soluta, autem, repellat ratione explicabo.
+          在未來的道路上，我希望自己能成為一個有核心價值的人，我能與團隊有良好的溝通，我想要加強自己的英文能力和理解能力， 這使我在閱讀原文的教學文章會更有效率，最後也是最重要的程式與設計能力，希望能更有效率的開發專案，並當遇到問題時，有獨立思考並解決難題的迅速反應及思維
         </p>
         <p class="copyright">Copyright @ 2018 Alan's CV demo</p>
       </div>

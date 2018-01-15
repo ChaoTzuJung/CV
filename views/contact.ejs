@@ -1,37 +1,22 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>
-        傳送表單內容
-    </title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-</head>
-<body>
-    <form action="/contact/post" method="post">
-        <h1>聯絡我們</h1>
-        <%= errors %>
-        <%= date %>
-        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
-        <div>
-            <label for="username">姓名:</label>
-            <input type="text" name="username" id="username"/>
-        </div>
-        <div>
-            <label for="email">Email:</label>
-            <input type="text" name="email" id="email"/>
-        </div>
-        <div>
-            <label for="title">標題:</label>
-            <input type="text" name="title" id="title"/>
-        </div>
-        <div>
-            <label for="description">訊息內容:</label>
-            <textarea name="description" id="description" cols="30" rows="10"></textarea>
-        </div>
-        <div>
-            <input type="submit" value="送出訊息" />
-        </div>
-    </form>
-</body>
-
-</html>
+<form action="/post" class="form wow fadeInUp" method="post">
+  <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+  <label for="username">Name</label>
+  <input type="text" name="username" id="username">
+  <div class="row">
+    <div class="col-sm-6">
+      <label for="tel">Phone</label>
+      <input type="tel" name="tel" id="tel">
+    </div>
+    <div class="col-sm-6">
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email">
+    </div>
+  </div>
+  <label for="description">Message</label>
+  <textarea name="description" id="description" cols="30" rows="10"></textarea>
+  <!-- <%= date %> -->
+  <%= errors %>
+  <div class="btn-group btn-group--center form__btn-group">
+    <input type="submit" class="btn btn--primary btn--md" value="Send">
+  </div>
+</form>
