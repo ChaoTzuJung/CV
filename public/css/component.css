@@ -308,7 +308,7 @@
 
 .header--colored {
   background-color: #fefefe;
-  box-shadow: 0px 3px 5px rgb(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 5px rgb(0, 0, 0, 0.2);
 }
 
 .header--colored .menu-toggle span {
